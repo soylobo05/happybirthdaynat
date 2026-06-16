@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feliz Cumpleaños Natalia 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff9ecf,#ffd6ea,#ffe9f3);
+    overflow-x:hidden;
+    text-align:center;
+}
+
+.contenedor{
+    padding:50px 20px;
+}
+
+h1{
+    color:white;
+    font-size:3rem;
+    margin-bottom:20px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.2);
+}
+
+.mensaje{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    padding:25px;
+    border-radius:20px;
+    color:#444;
+    line-height:1.8;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+button{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#ff4f95;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.sorpresa{
+    display:none;
+    margin-top:30px;
+    background:white;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:30px;
+    border-radius:20px;
+    color:#444;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.galeria{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.galeria img{
+    width:400px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.galeria button{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    font-size:22px;
+    margin:0;
+}
+
+video{
+    width:100%;
+    border-radius:20px;
+    margin-top:20px;
+}
+
+.corazon{
+    position:fixed;
+    font-size:25px;
+    animation:flotar 8s linear infinite;
+}
+
+@keyframes flotar{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+.confeti{
+    position:fixed;
+    width:10px;
+    height:10px;
+    top:-10px;
+    animation:caer 4s linear forwards;
+}
+
+@keyframes caer{
+    to{
+        transform:translateY(100vh) rotate(720deg);
+    }
+}
+
+@media(max-width:768px){
+
+    .contenedor{
+        padding:20px 10px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.4rem;
+    }
+
+    .mensaje,
+    .sorpresa{
+        font-size:1rem;
+        padding:20px;
+    }
+
+    .galeria{
+        flex-direction:column;
+    }
+
+    .galeria img{
+        width:100%;
+        max-width:320px;
+    }
+
+    .galeria button{
+        width:50px;
+        height:50px;
+        font-size:20px;
+    }
+
+    .premios{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .premio{
+        width:95%;
+        max-width:300px;
+    }
+
+    #contador{
+        font-size:18px;
+        padding:15px;
+    }
+
+    button{
+        width:90%;
+        max-width:300px;
+    }
+
+}
+
+.premios{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.premio{
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    width:250px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#contador{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    margin-top:20px;
+    padding:20px;
+    border-radius:20px;
+    font-size:22px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#deseo{
+    margin-top:20px;
+    font-size:20px;
+    color:#ff4f95;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🎂 Feliz Cumpleaños Natalia 🎂</h1>
+
+<div class="mensaje">
+
+no soy bueno con las palabras la verdad pero hoy, 16 de julio, quiero desearte feliz cumpleaños. 💖
+
+<br><br>
+
+Natalia, la verdad es que eres unas persona bastante especial para mi sin importar la circustancia has estado conmigo y apoyandome en el camino apesar de ser un tonto que aveces toma malas deciciones,
+
+<br><br>
+
+gracias por estar conmigo a pesar de todo gracias por no dejarme tan solo como creia y gracias por ser la niña loca que conoci hace años 
+
+<br><br>
+
+la verdad quisiera compensarte con algo el echo de no haber estado en un dia tan especial como lo fueron tus quince me arrepiento enormemente pero como no soy muy bueno en hacer regalos a mano o hacer cartas te hize esto que es lo mejor que se hacer :)✨
+
+</div>
+
+<button onclick="mostrarSorpresa()">
+🎁 Abrir Sorpresa
+</button>
+
+<div class="sorpresa" id="sorpresa">
+
+<h2>💖 Un Mensaje Especial Para Ti >:) 💖</h2>
+
+<br>
+
+<p>
+Natalia, hoy es tu día y quiero recordarte:
+<br><br>
+Eres una dura una mujer luchona, inteligente, y capaz de todo a pesar de tus inseguridades.
+<br><br>
+Nunca olvidare ese dia que me hize tu amigo por casulidad para mi? la mejor casualidad.
+<br><br>
+🎂 FELIZ CUMPLEAÑOS NAT LA QUIERO🎂
+<br><br>
+ESPERO LA PASES BIEN me guardas torta pequeña zorrita ;)
+</p>
+
+<br><br>
+
+<h2>📸 MIRA COMO ERAS Y ERES 📸</h2>
+
+<div class="galeria">
+
+<button onclick="anterior()">⬅️</button>
+
+<img id="foto" src="img_nat/nat8.jpeg" alt="Foto">
+
+<button onclick="siguiente()">➡️</button>
+
+</div>
+
+<br><br>
+<h2>🏆 Premios de Natalia 🏆</h2>
+
+<div class="premios">
+
+<div class="premio">🥇 Mejor migajera de la actualidad</div>
+
+<div class="premio">🌟 la loca perfecta</div>
+
+<div class="premio">😂 Experta en sacar risas con sus huevadas</div>
+
+<div class="premio">💖 al corazon de pollito mas grande </div>
+
+<div class="premio">🎂 Cumpleañera oficial del año</div>
+
+<div class="premio">🦊 Pequeña zorrita profesional</div>
+
+</div>
+
+<br><br>
+
+<h2>✨ Frasco de Deseos ✨</h2>
+
+<button onclick="nuevoDeseo()">
+💌 Sacar un deseo
+</button>
+
+<p id="deseo"></p>
+
+<br><br>
+
+<h2>💖 Tiempo desde que comenzó nuestra amistad 💖</h2>
+
+<div id="contador"></div>
+
+</div>
+
+<script>
+
+function mostrarSorpresa(){
+
+document.getElementById("sorpresa").style.display="block";
+
+for(let i=0;i<120;i++){
+
+let confeti=document.createElement("div");
+
+confeti.classList.add("confeti");
+
+confeti.style.left=Math.random()*100+"vw";
+
+confeti.style.background=
+`hsl(${Math.random()*360},100%,60%)`;
+
+confeti.style.animationDuration=
+(2+Math.random()*3)+"s";
+
+document.body.appendChild(confeti);
+
+setTimeout(()=>{
+confeti.remove();
+},5000);
+
+}
+
+}
+
+const fotos = [
+"img_nat/nat13.jpeg",
+"img_nat/nat12.jpeg",
+"img_nat/nat1.jpeg",
+"img_nat/nat23.jpeg",
+"img_nat/nat2.jpeg",
+"img_nat/nat22.jpeg",
+"img_nat/nat3.jpeg",
+"img_nat/nat14.jpeg",
+"img_nat/nat4.jpeg",
+"img_nat/nat15.jpeg",
+"img_nat/nat5.jpeg",
+"img_nat/nat16.jpeg",
+"img_nat/nat6.jpeg",
+"img_nat/nat17.jpeg",
+"img_nat/nat7.jpeg",
+"img_nat/nat18.jpeg",
+"img_nat/nat8.jpeg",
+"img_nat/nat19.jpeg",
+"img_nat/nat9.jpeg",
+"img_nat/nat20.jpeg",
+"img_nat/nat10.jpeg",
+"img_nat/nat21.jpeg",
+"img_nat/nat11.jpeg",
+"img_nat/nat22.jpeg",
+"img_nat/nat23.jpeg",
+"img_nat/nat24.jpeg",
+];
+
+let actual = 0;
+
+function siguiente(){
+
+actual++;
+
+if(actual >= fotos.length){
+actual = 0;
+}
+
+document.getElementById("foto").src = fotos[actual];
+
+}
+
+function anterior(){
+
+actual--;
+
+if(actual < 0){
+actual = fotos.length - 1;
+}
+
+document.getElementById("foto").src = fotos[actual];
+
+}
+
+function crearCorazon(){
+
+let corazon=document.createElement("div");
+
+corazon.classList.add("corazon");
+
+corazon.innerHTML="💖";
+
+corazon.style.left=Math.random()*100+"vw";
+
+corazon.style.fontSize=(15+Math.random()*25)+"px";
+
+document.body.appendChild(corazon);
+
+setTimeout(()=>{
+corazon.remove();
+},8000);
+
+}
+
+setInterval(crearCorazon,500);
+
+const deseos = [
+"💖 Que nunca te falte tiempo para hacer talleres",
+"toma un florcita :3 ->🌷",
+"⭐ que se cumpla el dia que te hagas millonaria...pa que me pages",
+"🎂 Que este cumpleaños sea inolvidable",
+"💝 Que dejes de ser migajera",
+"🌈 y como dijo mario benedetti: seguiras siendo mi estrella favorita asi hayas decidido iluminar otros cielos,otras noches y otras vidas y yo seguire siendo el que escriba de todo a la nada",
+"te quiero mas de lo que piensas✨",
+"💖 Gracias por todos los momentos compartidos desde aquel 14 de julio de 2023."
+];
+
+function nuevoDeseo(){
+
+const aleatorio =
+Math.floor(Math.random()*deseos.length);
+
+document.getElementById("deseo").innerHTML =
+deseos[aleatorio];
+
+}
+
+
+function actualizarContador(){
+
+const inicio = new Date("2023-07-14T14:00:00");
+const ahora = new Date();
+
+let años = ahora.getFullYear() - inicio.getFullYear();
+let meses = ahora.getMonth() - inicio.getMonth();
+let dias = ahora.getDate() - inicio.getDate();
+
+if(dias < 0){
+    meses--;
+
+    const ultimoMes =
+    new Date(
+        ahora.getFullYear(),
+        ahora.getMonth(),
+        0
+    ).getDate();
+
+    dias += ultimoMes;
+}
+
+if(meses < 0){
+    años--;
+    meses += 12;
+}
+
+let diferencia =
+Math.floor((ahora - inicio)/1000);
+
+const horasTotales =
+Math.floor(diferencia/3600);
+
+const horas = horasTotales % 24;
+
+const minutos =
+Math.floor(diferencia/60) % 60;
+
+const segundos =
+diferencia % 60;
+
+document.getElementById("contador").innerHTML =
+
+`
+💖 Nuestra amistad lleva:
+<p> desde el 14 de julio de 2023, sin contar los años antes de la fecha claro UU</p>
+
+
+<br><br>
+
+🎉 ${años} años
+
+<br>
+
+📅 ${meses} meses
+
+<br>
+
+🌟 ${dias} días
+
+<br><br>
+
+🕑 ${horas} horas
+
+<br>
+
+⏰ ${minutos} minutos
+
+<br>
+
+⌛ ${segundos} segundos
+`;
+
+}
+
+setInterval(actualizarContador,1000);
+
+actualizarContador();
+</script>
+
+</body>
+</html>
